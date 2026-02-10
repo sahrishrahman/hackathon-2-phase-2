@@ -1,5 +1,17 @@
- {
-     2   "name": "hackathon_2_phase_2",
-     3   "version": 2,
-     4   "public": false
-     5 }
+{
+      2   "version": 2,
+      3   "name": "hackathon_2_phase_2",
+      4   "builds": [
+      5     {
+      6       "src": "package.json",
+      7       "use": "@vercel/next",
+      8       "config": {}
+      9     }
+     10   ],
+     11   "routes": [
+     12     {
+     13       "src": "/(.*)",
+     14       "dest": "/"
+     15     }
+     16   ]
+     17 }
